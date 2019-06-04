@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<meta charset= "utf-8">
+	<title>
+		Faktorialas
+	</title>
+	<script>
+		function skaiciuoti() {
+			
+			var sk  = parseInt ( document.getElementById ( 'sk' ).value );
+			
+			
+			rez_str = 'Įvestas skaičius: ' +  sk  + ' ' +  '<br>';
+			
+			F = 1;
+			Fx = 1;
+			
+			
+			
+
+			while ( F <= sk  ) {
+				
+				Fx = F * Fx;
+				
+				F += 1;
+				
+				
+			//rez_str+= 'Skaičiaus faktorialas:' + Fx;
+			
+			} 
+			
+			
+			rez_str+= 'Skaičiaus faktorialas:' + Fx ;
+			
+
+				
+			rez = document.getElementById ( 'rez' );
+			rez.innerHTML = rez_str; 
+		
+		}
+	
+	
+	</script>
+</head>
+<body> 
+	Įveskite skaičių: <br><input type="text" id="sk"><br>
+	<input type="button" onClick="skaiciuoti()" value="atsakymas">
+	<div id="rez">
+	</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
